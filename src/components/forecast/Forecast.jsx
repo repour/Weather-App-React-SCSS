@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import './Forecast.scss'
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from 'react-accessible-accordion'
 
@@ -59,10 +58,6 @@ const Forecast = ({ data }) => {
             </Accordion>
         </>
     )
-}
-
-Forecast.propTypes = {
-    data: PropTypes.array.isRequired
 }
 
 export default Forecast

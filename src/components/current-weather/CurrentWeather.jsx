@@ -1,5 +1,4 @@
 import './CurrentWeather.scss'
-import PropTypes from 'prop-types'
 
 
 const CurrentWeather = ({data}) => {
@@ -40,8 +39,5 @@ const CurrentWeather = ({data}) => {
     )
 }
 
-CurrentWeather.propTypes = {
-    data: PropTypes.array.isRequired
-}
 
 export default CurrentWeather
