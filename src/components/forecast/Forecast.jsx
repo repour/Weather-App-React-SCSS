@@ -1,4 +1,5 @@
 import './Forecast.scss'
+import PropTypes from 'prop-types'
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from 'react-accessible-accordion'
 
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -58,6 +59,10 @@ const Forecast = ({ data }) => {
             </Accordion>
         </>
     )
+}
+
+Forecast.propTypes = {
+    data: PropTypes.object.isRequired
 }
 
 export default Forecast

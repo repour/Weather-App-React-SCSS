@@ -1,4 +1,5 @@
 import './CurrentWeather.scss'
+import PropTypes from 'prop-types'
 
 
 const CurrentWeather = ({data}) => {
@@ -37,6 +38,10 @@ const CurrentWeather = ({data}) => {
             </div>
         </div>
     )
+}
+
+CurrentWeather.propTypes = {
+    data:PropTypes.object.isRequired
 }
 
 
