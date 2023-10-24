@@ -63,3 +63,26 @@
         color: #212121;
     }
 }
+
+@media screen and (max-width: 410px) {
+    .title{
+        padding: 1.5rem;
+    }
+    .daily-icon{
+        font-size: 12px;
+    }
+    .daily-details-grid-item label:first-child, .daily-details-grid-item label:last-child {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .title{
+        padding: 1rem;
+    }
+    .daily-icon{
+        font-size: 10px;
+    }
+    .daily-details-grid-item label:first-child, .daily-details-grid-item label:last-child {
+        font-size: 11px;
+    }
+}

@@ -1,60 +1,113 @@
-.weather{
+.weather {
     width: 300px;
     border-radius: 6px;
-	box-shadow: 10px -2px 20px 2px #555;
+    box-shadow: 10px -2px 20px 2px #555;
     color: #fff;
     background-color: #333;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
-    .top{
+
+    .top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .city{
+
+        .city {
             font-weight: 600;
             font-size: 18px;
             line-height: 1;
             margin: 0;
             letter-spacing: 1px;
         }
-        .weather-description{
+
+        .weather-description {
             font-weight: 400;
             font-size: 14px;
             line-height: 1;
             margin: 0;
         }
-        .weather-icon{
+
+        .weather-icon {
             width: 100px;
         }
     }
-    .bottom{
+
+    .bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .temperature{
+
+        .temperature {
             font-size: 70px;
             font-weight: 600;
             width: auto;
             letter-spacing: -5px;
             margin: 10px 0;
         }
-        .details{
+
+        .details {
             width: 100%;
             padding-left: 20px;
-            .parameter-row{
+
+            .parameter-row {
                 display: flex;
                 justify-content: space-between;
-                .parameter-label{
+
+                .parameter-label {
                     text-align: left;
                     font-weight: 400;
                     font-size: 12px;
                 }
-                .parameter-value{
+
+                .parameter-value {
                     text-align: right;
                     font-weight: 600;
                     font-size: 12px;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: 520px) {
+    .container {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .container {
+        padding: 3rem 0 0;
+    }
+
+    .weather {
+        margin: 30px auto;
+
+        .top {
+            .city {
+                font-size: 14px;
+            }
+
+            .weather-description {
+                font-size: 12px;
+            }
+        }
+        .bottom {
+    
+            .temperature {
+                font-size: 50px;
+            }
+            .details .parameter-row .parameter-label, .details .parameter-row .parameter-value{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 300px) {
+    .weather {
+        margin: 30px 0;
+        width: 100%;
+        .bottom .temperature {
+            font-size: 40px;
         }
     }
 }
